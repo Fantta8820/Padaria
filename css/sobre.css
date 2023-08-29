@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(56, 23, 23, 0.7), rgba(92, 38, 38, 0.7)), url(../img/padaria-banner03.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+ul li {
+    padding: 8px 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+    padding: 4% 0 0 0;
+    font-size: 60px;
+    text-align: center;
+}
+
+.info {
+    padding: 0 0 4% 0;
+}
+
+.info img {
+    width: 600px;
+    margin: 10% 0 0 0;
+    border-radius: 100px;
+}
+
+.sobre {
+    margin: 6% 5% 0 10%;
+}
+
+.sobre h2 {
+    margin: 5px 0 5px 0;
+}
+
+.sobre a {
+    text-decoration: none;
+    color: #803535;
+}
+
+footer {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+footer i {
+    padding: 20px 5px 0 5px;
+}
+
+@media (max-width: 1050px){
+    header{
+        min-height: 50vh;
+    }
+
+    .line img{
+        width: 500px;
+    }
+
+    .sobre h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 850px){
+    header{
+        min-height: 40vh;
+    }
+
+    .line img{
+        width: 420px;
+    }
+
+    .sobre h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    header{
+        min-height: 40vh;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .line img{
+        width: 400px;
+    }
+
+    .sobre h2{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 675px){
+    header{
+        min-height: 35vh;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .info .line{
+        display: block;
+    }
+
+    .line img{
+        width: 400px;
+        display: flex;
+        margin: 20px auto;
+    }
+
+    .sobre h2{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+

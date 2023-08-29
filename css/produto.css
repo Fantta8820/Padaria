@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(56, 23, 23, 0.7), rgba(92, 38, 38, 0.7)), url(../img/padaria-banner04.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.line img {
+    width: 600px;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+ul li {
+    padding: 8px 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    padding: 4% 0 0 0;
+    font-size: 60px;
+    text-align: center;
+}
+
+.info {
+    padding: 0 0 4% 0;
+}
+
+.cardapio {
+    padding: 6% 2% 0 8%;
+}
+
+.cardapio h2 {
+    padding: 5px 0 5px 0;
+    font-size: 40px;
+}
+
+.prod {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(90deg, #381717, #5c2626);
+    color: white;
+    text-align: center;
+}
+
+.prod h4 {
+    padding: 4% 0 0 0;
+}
+
+.card {
+    flex: 1 1 21rem;
+    margin: 10px 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    align-self: normal;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    color: black;
+    padding: 10px 0 0 0;
+}
+
+.card p {
+    color: black;
+}
+
+.card02 {
+    flex: 1 1 21rem;
+    margin: 10px 115px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    align-self: normal;
+}
+
+.card02 img {
+    width: 100%;
+}
+
+.card02 h1 {
+    color: black;
+    padding: 10px 0 0 0;
+}
+
+.card02 p {
+    color: black;
+}
+
+.qtd {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 80px 0 20px 0;
+}
+
+footer i {
+    padding: 20px 5px 0 5px;
+}
+
+.prod h2 {
+    text-decoration: none;
+    color: #ffd6b6;
+    padding: 0 0 40px 0;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: 20px 0 45px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+@media (max-width: 1150px){
+    header{
+        min-height: 50vh;
+    }
+
+    .info .line{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cardapio h2{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 975px){
+    header{
+        min-height: 50vh;
+    }
+
+    .info .line{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cardapio h2{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .prod .line{
+        display: block;
+    }
+
+    .card {
+        flex: 1 1 21rem;
+        margin: 10px 200px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        align-self: normal;
+    }
+
+    .card02 {
+        flex: 1 1 21rem;
+        margin: 10px 200px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        align-self: normal;
+    }
+
+    .qtd {
+        text-align: center;
+        width: 40%;
+        height: 30%;
+        margin: 20px 0 20px 0;
+        border-radius: 20px;
+        color: black;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        min-height: 40vh;
+    }
+
+    .info .line{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cardapio h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .prod .line{
+        display: block;
+    }
+
+    .card {
+        flex: 1 1 21rem;
+        margin: 10px 200px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        align-self: normal;
+    }
+
+    .card02 {
+        flex: 1 1 21rem;
+        margin: 10px 200px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        align-self: normal;
+    }
+
+    .card h1{
+        font-size: 20px;
+    }
+
+    .card02 h1{
+        font-size: 20px;
+    }
+
+    .qtd {
+        text-align: center;
+        width: 40%;
+        height: 30%;
+        margin: 20px 0 20px 0;
+        border-radius: 20px;
+        color: black;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padaria A&E - Produtos</title>
+  <link rel="stylesheet" href="../css/produto.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="line">
+        <a href="../index.html">
+          <img src="../img/logo.png" id="logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>
+      Produtos
+    </h1>
+  </header>
+  <section class="info">
+    <div class="line">      
+        <img src="../img/cardapio.jpg" id="cardapio">
+      <div class="cardapio">
+        <h2>
+          Analise o nosso cardápio para encontrar os melhores produtos nos melhores preços e nas melhores qualidades
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="prod">
+    <h4>- Calculadora - </h4>
+    <h3>Use nossa calculadora para estipular o preço de sua compra em nossas lojas físicas</h3>
+    <div class="line">
+      <div class="card">
+        <img src="../img/pao.jpg">
+        <h1>Pão Francês</h1>
+        <p>R$0,99 por unidade</p>
+        <input type="text" id="pao" name="pao" class="qtd" value="0">
+      </div>
+      <div class="card">
+        <img src="../img/sonho.webp">
+        <h1>Sonhos</h1>
+        <p>R$3,49 por unidade</p>
+        <input type="text" placeholder="Quantidade" id="sonho" name="sonho" class="qtd" value="0">
+      </div>
+      <div class="card">
+        <img src="../img/cafe.jpg">
+        <h1>Café</h1>
+        <p>R$4,99 por unidade</p>
+        <input type="text" placeholder="Quantidade" id="cafe" name="cafe" class="qtd" value="0">
+      </div>
+    </div>
+    <div class="line">
+      <div class="card">
+        <img src="../img/baguete.webp">
+        <h1>Baguette</h1>
+        <p>R$3,89 por unidade</p>
+        <input type="text" placeholder="Quantidade" name="baguette" id="baguette" class="qtd" value="0">
+      </div>
+      <div class="card">
+        <img src="../img/croissant.webp">
+        <h1>Croissant</h1>
+        <p>R$6,99 por unidade</p>
+        <input type="text" placeholder="Quantidade" name="croissant" id="croissant" class="qtd" value="0">
+      </div>
+      <div class="card">
+        <img src="../img/pretzel.webp">
+        <h1>Pretzel</h1>
+        <p>R$8,99 por unidade</p>
+        <input type="text" placeholder="Quantidade" name="pretzel" id="pretzel" class="qtd" value="0">
+      </div>
+    </div>
+    <div class="line">
+      <div class="card02">
+        <img src="../img/cha.webp">
+        <h1>Chá</h1>
+        <p>R$3,99 por unidade</p>
+        <input type="text" placeholder="Quantidade" id="cha" name="cha" class="qtd" value="0">
+      </div>
+      <div class="card02">
+        <img src="../img/suco.jpg">
+        <h1>Suco</h1>
+        <p>R$5,49 por unidade</p>
+        <input type="text" placeholder="Quantidade" id="suco" name="suco" class="qtd" value="0">
+      </div>
+    </div>
+    <button onclick="calcular()" class="btn">Calcular</button>
+    <h2 id="resposta">
+    </h2>
+  </section>
+  <footer>
+    <p>Marca ficcional criada para estudo</p>
+    <div class="redes">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </footer>
+  <script src="../js/produto.js"></script>
+</body>
+
+</html>
